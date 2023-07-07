@@ -1,0 +1,53 @@
+.catalog {
+    font-size: 12px;
+    position: relative;
+
+    button {
+        padding: 7px 20px;
+        background-color: #000;
+        color: #fff;
+        border-radius: 10px;
+        border: 0;
+        cursor: pointer;
+
+        &:hover {
+            background: lighten($color: #000000, $amount: 35);
+        }
+
+        &:active {
+            position: relative;
+            top: 1px;
+        }
+    }
+
+    .main__list {
+        width: 200%;
+        position: absolute;
+        top: 50px;
+        right: 0px;
+        margin-top: 10px;
+        padding: 10px 20px;
+        background: #fff;
+        border: 0.7px solid gray;
+        border-radius: 10px;
+        box-shadow: 0 14px 30px rgba(0, 0, 0, 0.05);
+
+
+        span {
+            font-weight: 700;
+        }
+
+        li {
+            margin-top: 10px;
+            margin-left: 10px;
+
+            ul {
+                li {
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+
+    
+}
